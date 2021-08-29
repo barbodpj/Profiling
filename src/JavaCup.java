@@ -23,16 +23,12 @@ public class JavaCup {
         else { System.out.println("NO"); }
     }
     public static void temp() {
-        int[] a = new int[10000 * 20000];
+        int[] a = new int[10000*20000];
         for (int i = 0; i < 10000; i++)
         {
             for (int j = 0; j < 20000; j++) {
-                a[20000 * i + j] = i + j;
+                a[j+i*20000]=i+j;
             }
         }
-        int q = 0;
-        for (int i = 0; i < a.length; i++)
-            q += a[i];
-        System.out.println(q);
     }
 }
